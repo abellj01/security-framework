@@ -24,26 +24,15 @@ def backup(answer) :
     'Fail'
     >>> backup('"')
     'Fail'
+    >>> backup('123')
+    'Fail'
     """
     if answer == 'Ye' or answer == 'No' or answer == 'N' or answer == 'n' \
-         or answer == 'Maybe' or answer == ' ' or answer == '"' or answer =="'" :
+         or answer == 'Maybe' or answer == ' ' or answer == '"' or answer =="'" \
+         or answer.isnumeric() :
         return "Fail"
     return "Pass"
 
-# def backup(answer) :
-#     """
-#     """
-#     return "Fail"
-#
-# def backup(answer) :
-#     """
-#     >>> backup('123')
-#     'Fail'
-#     >>> backup('ube123')
-#     'Fail'
-#     """
-#     if answer.isalnum() :
-#         return 'Fail'
 
 # def backup(answer) :
 #     """
