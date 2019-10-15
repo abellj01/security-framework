@@ -8,18 +8,22 @@ def backup(answer) :
     'Pass'
     >>> backup('y')
     'Pass'
+    >>> backup('Ye')
+    'Fail'
+    >>> backup('No')
+    'Fail'
+    >>> backup('N')
+    'Fail'
+    >>> backup('n')
+    'Fail'
     """
+    if answer == 'Ye' or answer == 'No' or answer == 'N' or answer == 'n' :
+        return "Fail"
     return "Pass"
 
 # def backup(answer) :
 #     """
-#
-#     >>> backup('No')
-#     'Fail'
-#     >>> backup('N')
-#     'Fail'
-#     >>> backup('n')
-#     'Fail'
+
 #     >>> backup('Maybe')
 #     'Fail'
 #     >>> backup(' ')
