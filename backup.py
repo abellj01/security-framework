@@ -27,11 +27,9 @@ def backup(answer) :
     >>> backup('123')
     'Fail'
     """
-    if answer == 'Ye' or answer == 'No' or answer == 'N' or answer == 'n' \
-         or answer == 'Maybe' or answer == ' ' or answer == '"' or answer =="'" \
-         or answer.isnumeric() :
-        return "Fail"
-    return "Pass"
+    if answer == 'Yes' or answer == 'Y' or answer == 'y' :
+        return "Pass"
+    return "Fail"
 
 
 # def backup(answer) :
