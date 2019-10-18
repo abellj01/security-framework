@@ -1,5 +1,3 @@
-import re
-
 def backup(answer) :
     """
     >>> backup('Yes')
@@ -27,6 +25,7 @@ def backup(answer) :
     >>> backup('123')
     'Fail'
     """
+<<<<<<< HEAD
     if answer == 'Yes' or answer == 'Y' or answer == 'y' :
         return "Pass"
     return "Fail"
@@ -48,3 +47,10 @@ def backup(answer) :
 if __name__ == "__main__":
     import doctest
     doctest.testmod()
+=======
+    if answer == 'Ye' or answer == 'No' or answer == 'N' or answer == 'n' \
+         or answer == 'Maybe' or answer == ' ' or answer == '"' or answer =="'" \
+         or answer.isnumeric() :
+        return "Fail"
+    return "Pass"
+>>>>>>> 230a139c81ccefd8f5c6bffa0753e9502bf47c1d
